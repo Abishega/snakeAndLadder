@@ -1,0 +1,33 @@
+.board {
+  display: grid;
+  grid-template-columns: repeat(10, 50px);
+  grid-template-rows: repeat(10, 50px);
+  gap: 5px;
+}
+
+.board-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  height: 50px;
+  width: 50px;
+  position: relative;
+}
+
+.player {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  background-color: yellow;
+  padding: 2px;
+  border-radius: 50%;
+}
+
+.player-1 {
+  background-color: red;
+}
+
+.player-2 {
+  background-color: blue;
+}
